@@ -1,0 +1,30 @@
+.form {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    width: 500px;
+    height: 200px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__input {
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 200px;
+    height: 25px;
+}
+
+.form__button {
+    width: 200px;
+    height: 35px;
+}
+
+.form__text {
+    font-size: 18px;
+    margin-top: 0;
+}

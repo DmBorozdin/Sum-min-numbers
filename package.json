@@ -1,0 +1,23 @@
+{
+  "name": "sum-min-numbers",
+  "version": "1.0.0",
+  "description": "Test task on finding the sum of two minimal numbers",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --no-ui --files \"js/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmBorozdin/Sum-min-numbers.git"
+  },
+  "author": "Dmitrii Borozdin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmBorozdin/Sum-min-numbers/issues"
+  },
+  "homepage": "https://github.com/DmBorozdin/Sum-min-numbers#readme",
+  "devDependencies": {
+    "browser-sync": "2.27.10"
+  }
+}
