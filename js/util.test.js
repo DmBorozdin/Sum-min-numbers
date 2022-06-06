@@ -1,4 +1,4 @@
-import {getSumTwoMinElem, getArray} from "./util.js";
+import {getSumTwoMinElem, getArray, onSumHandle} from "./util.js";
 
 describe(`Test getSumTwoMinElem`, () => {
     let testArr;
@@ -50,5 +50,19 @@ describe(`Test getArray`, () => {
     it(`Function should delete space between numbers`, () => {
         testStr =  `1 4,19,1,2 5 3,10,5,`;
         expect(getArray(testStr)).toEqual([14, 19, 1, 253, 10, 5]);
+    });
+});
+
+describe(`Test onSumHandle`, () => {
+    it(`Function should show correct message when received empty string`, () => {
+        window.alert = jest.fn();
+        onSumHandle('');
+        expect(window.alert).toHaveBeenCalledWith('Введите хотя бы одно число!');
+    });
+
+    it(`Function should show correct message when received string with numbers`, () => {
+        window.alert = jest.fn();
+        onSumHandle('7, 14, 19, 15, 10, 80');
+        expect(window.alert).toHaveBeenCalledWith('Сумма двух минимальных элементов массива = 17');
     });
 });

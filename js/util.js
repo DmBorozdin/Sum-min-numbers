@@ -15,3 +15,9 @@ export const getArray = (str) => {
     const filterArr = arr.filter((item) => !Number.isNaN(Number(item)) && item !== '').map((str) => Number(str));
     return filterArr;
 };
+
+export const onSumHandle = (str) => {
+    const arrayOfNumber = getArray(str);
+    const sumTwoMinElem = getSumTwoMinElem(arrayOfNumber);
+    sumTwoMinElem !== null ? alert(`Сумма двух минимальных элементов массива = ${sumTwoMinElem}`) : alert(`Введите хотя бы одно число!`)
+};
